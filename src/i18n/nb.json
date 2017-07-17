@@ -1,0 +1,33 @@
+{
+    "BACK": "Tilbake",
+    "CLEARFILTERS": "KLAR",
+    "CLOSE": "LUKK",
+    "NORECORDS": "INGEN POSTER FINNES",
+    "OPTIONS": "Alternativer",
+    "RESET": "TILBAKESTILLE",
+    "REQUIREDERRORMSG": "Feltet er påkrevet",
+    "INVALIDERRORMSG": "Feltet er ugyldig",
+    "SAVE": "LAGRE",
+    "SEARCH": "Søke",
+    "EDIT": "Edit",
+    "DELETE": "Delete",
+    "SEND": "Send",
+    "NEXT": "Neste",
+    "ERRORMESSAGE": "Feil oppsto",
+    "HOME": {
+        "TITLE": "Velkommen til:",
+        "NAME": "EUA",
+        "LOGIN_BUTTON": "LOGG INN",
+        "FORGOT_PASSWORD": "Glemt passord?",
+        "WELCOME_MESSAGE": "Welcome to Extended User Admin"
+    },
+    "HEADER": {
+        "NOR": "NORSK",
+        "LOGOUT": "LOGG UT",
+        "LOGIN": "LOGG INN",
+        "MYACCOUNT": "MIN KONTO"
+    },
+    "HEADERMENU": {
+        "GROUPS": "GRUPPER"
+    }
+}

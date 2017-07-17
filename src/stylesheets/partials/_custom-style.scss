@@ -1,0 +1,275 @@
+body {
+    font-family: $eua-baseFont;
+    padding-bottom: 36px;
+    @include respond-to($tablet-portrait) {}
+}
+
+img {
+    max-width: 100%;
+}
+
+.content_fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+a {
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.full-fluid {
+    float: left;
+    width: 100%;
+    .btn-inline {
+        padding-top: 24px;
+    }
+}
+
+.panel-default {
+    .panel-heading {
+        padding: 10px !important;
+        border: 0;
+        background: $green;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        color: $white;
+        font-size: 16px;
+    }
+}
+
+.btn-primary {
+    background-color: $btn-primary-color;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $btn-primary-hover-color;
+        border-color: $btn-primary-color !important;
+    }
+    .material-icons {
+        font-size: 17px;
+        display: block;
+        &.back-btn {
+            font-size: 22px;
+        }
+    }
+}
+
+//    page heading section
+.page-heading-section {
+    .page-heading {
+        margin-bottom: 25px;
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 1.4;
+        a.open-panel-link {
+            display: block !important;
+        }
+    }
+    .user-collapse {
+        margin-bottom: 40px;
+        .search-textBox {
+            color: #7E7975;
+            border: 0;
+            border-radius: 0;
+            border-bottom: 4px solid $green;
+            line-height: 1.5;
+            box-sizing: content-box;
+            box-shadow: none;
+            padding: 6px 0;
+            font-size: $btn-font-size;
+            &:hover {
+                box-shadow: 0 3px 0 #51a33d;
+                transform: translateY(-2px);
+            }
+        }
+        .search-btn {
+            outline: 0;
+            color: $white;
+            padding: 11px 48px;
+            font-weight: 700;
+            border-radius: 100px;
+            font-size: $btn-font-size;
+            background: linear-gradient(170deg, #51a33d, #64cd2f);
+            border-color: transparent;
+            vertical-align: middle;
+            transition: background .2s ease, color .2s ease, box-shadow .2s ease, transform .2s ease, -webkit-transform .2s ease;
+            &:hover {
+                box-shadow: 0 3px 0 #457e30;
+            }
+        }
+        .clear-btn {
+            padding: 11px 48px;
+            border-radius: 100px;
+            background: $light-grey;
+            border: 0;
+            font-size: $btn-font-size;
+            transition: background .2s ease, color .2s ease;
+        }
+    }
+}
+
+// modal Pop Up
+.modal {
+    font-family: $eua-secondary-font;
+    background: rgba(0, 0, 0, 0.6);
+    .modal-dialog {
+        margin: 100px auto;
+    }
+    .modal-header {
+        background-color: $green;
+        border-radius: 5px 5px 0px 0px;
+        color: $white;
+        font-size: 16px;
+    }
+    .app-modal-body {
+        td {
+            border-top: none;
+            label {
+                color: $dark-grey;
+            }
+        }
+    }
+}
+
+// tabs design
+.form-panel {
+    font-family: $eua-secondary-font;
+    label {
+        color: $dark-grey;
+    }
+    .nav {
+        margin-bottom: -1px;
+    }
+    .nav-pills {
+        li {
+            a {
+                color: $dark-grey;
+            }
+            &.active {
+                a,
+                a:hover,
+                a:focus {
+                    color: $dark-green;
+                    background-color: $light-grey;
+                    border: 1px solid $green;
+                    border-bottom: none;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 0;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .tab-content {
+        color: $white;
+        background-color: $light-grey;
+        border: 1px solid $green;
+        padding: 30px 15px 30px 5px;
+        .form-group {
+            margin-bottom: 12px !important;
+        }
+        .assignment-box {
+            margin: 25px 0;
+            .btn {
+                margin-right: 10px;
+            }
+        }
+    }
+    ul {
+        list-style-type: none;
+        &.addBox {
+            border: 1px solid $light-grey2;
+            padding: 10px;
+            margin-bottom: 0;
+            border-radius: 5px;
+            overflow-y: auto;
+            height: 138px;
+            background-color: $white;
+            color: $dark-grey;
+            li {
+                padding: 5px;
+                &:hover {
+                    background-color: $light-grey;
+                }
+                &.selected {
+                    background: linear-gradient(170deg, $green, $light-green);
+                    color: $white;
+                }
+                &.deselected {
+                    background-color: $light-grey2;
+                    color: $dark-grey;
+                }
+            }
+        }
+        &.assigned-item {
+            color: $green;
+        }
+    }
+    .moveListBtn {
+        color: $white;
+        text-align: center;
+        border-color: $green;
+        .btn {
+            margin-top: 53px;
+        }
+        .sm-btn {
+            float: left;
+            padding: 3px 7px !important;
+            margin-right: 3px !important;
+        }
+    }
+    table {
+        td {
+            color: $dark-grey;
+            border-top: none !important;
+        }
+    }
+    &.invite-panel {
+        background-color: $light-grey;
+    }
+}
+
+.center-realm-box {
+    font-family: $eua-secondary-font;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 7px 0px rgba(000, 000, 000, 0.4);
+    padding: 0;
+    border-radius: 4px;
+    border: none;
+    button {
+        margin: 10px auto;
+        display: table;
+    }
+}
+
+.right-label {
+    margin-left: 40px;
+}
+
+// toaster 
+.toast {
+    padding: 20px 15px 20px 15px !important;
+    font-family: $eua-secondary-bold;
+    bottom: 35px;
+    background-position: 15px 20px;
+    .toast-close-button {
+        opacity: 0;
+    }
+    &:hover {
+        .toast-close-button {
+            opacity: 1;
+        }
+    }
+    div[class^="ng-tns"]{
+        padding-left:35px;
+    }
+}

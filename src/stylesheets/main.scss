@@ -1,0 +1,13 @@
+    // this file should only contain imports of the other scss files.
+    // Vendors and external files
+    @import "vendor/fonts.scss";
+    @import "vendor/bootstrap-extended.scss"; 
+    @import "helpers/mixins.scss";
+    @import "partials/spinner.scss";
+    @import "constants/media-variables.scss";
+    @import "constants/fonts.scss";
+    @import "constants/colors.scss";
+    @import "partials/header.scss";
+    @import "partials/footer.scss";
+    @import "partials/table.scss";
+    @import "partials/custom-style.scss";
